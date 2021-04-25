@@ -61,7 +61,6 @@ func callbackPOST(c *gin.Context) {
 			switch message := event.Message.(type) {
 			// メッセージの種類が「テキスト」なら
 			case *linebot.TextMessage:
-				// postTextMessage(event, message.Text)
 				var responseMessage string = ""
 
 				// message.Text という変数にメッセージの内容が入っている
